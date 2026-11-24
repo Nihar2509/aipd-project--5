@@ -1,0 +1,156 @@
+
+.rooms-page {
+  padding: 20px;
+}
+
+.rooms-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.rooms-heading h2 {
+  margin: 0 0 6px;
+  color: #1f2937;
+}
+
+.rooms-heading p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.rooms-count {
+  padding: 12px 16px;
+  background: #eef2ff;
+  color: #3730a3;
+  border-radius: 5px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.rooms-form-card,
+.rooms-table-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.rooms-form-card h3,
+.rooms-table-card h3 {
+  margin: 0 0 18px;
+  color: #1f2937;
+}
+
+.rooms-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.rooms-form-grid input,
+.rooms-form-grid select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 14px;
+  background: white;
+}
+
+.rooms-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.rooms-form-actions button,
+.rooms-edit,
+.rooms-delete {
+  border: none;
+  border-radius: 5px;
+  padding: 9px 14px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.rooms-form-actions button {
+  background: #2563eb;
+  color: white;
+}
+
+.rooms-form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rooms-form-actions .rooms-cancel {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.rooms-success,
+.rooms-error {
+  padding: 11px 14px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.rooms-success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.rooms-error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.rooms-table-wrapper {
+  overflow-x: auto;
+}
+
+.rooms-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.rooms-table th,
+.rooms-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  font-size: 13px;
+}
+
+.rooms-table th {
+  background: #f9fafb;
+  color: #374151;
+}
+
+.rooms-edit {
+  background: #dbeafe;
+  color: #1d4ed8;
+  margin-right: 7px;
+}
+
+.rooms-delete {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+@media (max-width: 650px) {
+  .rooms-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .rooms-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

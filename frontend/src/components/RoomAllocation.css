@@ -1,0 +1,131 @@
+
+.room-allocation-page {
+  width: 100%;
+}
+
+.room-allocation-heading {
+  margin-bottom: 22px;
+}
+
+.room-allocation-heading h2 {
+  margin-bottom: 6px;
+}
+
+.room-allocation-heading p {
+  color: #666;
+}
+
+.room-allocation-panel,
+.room-allocation-results {
+  background: white;
+  border: 1px solid #e2e5e9;
+  border-radius: 8px;
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.room-allocation-panel label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.room-allocation-panel select {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.room-allocation-panel button {
+  padding: 11px 18px;
+  background: #2457a7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.room-allocation-panel button:hover {
+  background: #193f7c;
+}
+
+.room-allocation-panel button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.room-allocation-summary {
+  display: flex;
+  gap: 20px;
+  margin: 18px 0;
+}
+
+.room-allocation-summary div {
+  background: #f4f6f9;
+  padding: 18px;
+  border-radius: 6px;
+  min-width: 140px;
+}
+
+.room-allocation-summary strong,
+.room-allocation-summary span {
+  display: block;
+}
+
+.room-allocation-summary strong {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.room-allocation-summary span {
+  color: #666;
+  font-size: 13px;
+}
+
+.room-allocation-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.room-allocation-table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.room-allocation-table-wrapper th,
+.room-allocation-table-wrapper td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.room-allocation-table-wrapper th {
+  background: #f5f6f8;
+}
+
+.room-allocation-error,
+.room-allocation-success {
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.room-allocation-error {
+  background: #fde8e8;
+  color: #b42318;
+}
+
+.room-allocation-success {
+  background: #e2f5e9;
+  color: #18733b;
+}
+
+@media (max-width: 600px) {
+  .room-allocation-summary {
+    flex-direction: column;
+  }
+}
